@@ -1,0 +1,3 @@
+from datasets import load_dataset
+
+load_dataset("SinclairSchneider/tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram", split="train").to_pandas().to_json("tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram.json")
