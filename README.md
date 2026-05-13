@@ -45,4 +45,5 @@ python3 03_attach_embeddings.py --dataset tweets_about_german_politicians_jan_fe
 
 If you don't want to wait, run the following command to download the already classified and embedded data:
 ```
+python3 x2_get_classified_data_and_embeddings.py
 ```
