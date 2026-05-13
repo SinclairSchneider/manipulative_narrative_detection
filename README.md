@@ -47,3 +47,12 @@ If you don't want to wait, run the following command to download the already cla
 ```
 python3 x2_get_classified_data_and_embeddings.py
 ```
+## 6.) Dimensionality reduction (UMAP)
+Apply dimensionality reduction to 5- and 2-dimensional spaces for further clustering and visualization.
+```
+python3 04_umap_reduction.py
+```
+
+If you don't want to wait, run the following command to download the already classified and reduced data:
+```
+```
