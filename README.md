@@ -16,6 +16,9 @@ To get more options, run ``python3 01_apply_prompt.py --help``
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python3 01_apply_prompt.py --model qwen3.5-122b-a10b-fp8 --gpus 4 --dataset tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram.json --output_column_name classified --text_column text
 ```
-The classification process can take from days to weeks, depending on your machine. If you don't want to wait, run the following command:
+The classification process can take from days to weeks, depending on your machine. 
+
+If you don't want to wait, run the following command to download the already classified data:
 ```
+python3 x1_get_classified_data.py
 ```
