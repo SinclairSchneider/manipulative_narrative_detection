@@ -22,3 +22,12 @@ If you don't want to wait, run the following command to download the already cla
 ```
 python3 x1_get_classified_data.py
 ```
+## 4.) Apply the classification
+This will add a new but smaller file called 
+
+``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified_filtered.json``
+
+It only contains findings of manipulative posts.
+```
+python3 02_filter.py
+```
