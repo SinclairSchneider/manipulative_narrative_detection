@@ -31,3 +31,18 @@ It only contains findings of manipulative posts.
 ```
 python3 02_filter.py
 ```
+## 5.) Generate embeddings
+To generate the embeddings, run the following prompt.
+
+Notice that the instruction prompt is handed over as a parameter.
+
+A new file will be generated called
+
+``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified_filtered_BY_embeddings.parquet``
+```
+python3 03_attach_embeddings.py --dataset tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified_filtered.json --instruction "Identify the strategic narrative, manipulative intent, and underlying disinformation motive in the following text: "
+```
+
+If you don't want to wait, run the following command to download the already classified and embedded data:
+```
+```
