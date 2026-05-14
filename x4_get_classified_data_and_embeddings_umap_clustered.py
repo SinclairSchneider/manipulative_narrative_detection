@@ -1,0 +1,4 @@
+from datasets import load_dataset
+
+df = load_dataset("SinclairSchneider/tweets_about_german_politicians_jan_feb_2025_reddit_telegram_classified_embed_reduced_clustered", split="train").to_pandas()
+df.to_parquet("tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_classified_embeddings_umap_cluster.parquet")
