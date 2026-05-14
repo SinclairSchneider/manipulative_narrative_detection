@@ -99,3 +99,24 @@ python3 07_assesment_generate_files.py
 
 ## 2.) Paper evaluation
 The following scripts were used to generate the evaluation of our paper.
+
+To use them, change your current directory to ``paper_evaluation``by running ``cd paper_evaluation``.
+
+### 2.1.) Get the ideal min_cluster_size
+To get the ideal min_cluster size, run the following script.
+
+```
+python3 01_evaluation_min_cluster_size.py
+```
+
+You will get a result similar to the following table, where the noise ratio is desired to be low, and the semantic distance between the points is desired to be high.
+
+--- RESULTS ---
+|   min_cluster_size |   Num Clusters |   Noise Ratio (%) |   Avg Semantic Distance |
+|-------------------:|---------------:|------------------:|------------------------:|
+|                100 |            118 |             43.8  |                  0.3243 |
+|                200 |             75 |             40.04 |                  0.3151 |
+|                400 |             41 |             29.73 |                  0.3055 |
+|                600 |             32 |             30.16 |                  0.3056 |
+|                800 |             29 |             31.17 |                  0.2964 |
+|               1000 |             24 |             32.19 |                  0.2874 |
