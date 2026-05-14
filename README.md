@@ -73,3 +73,13 @@ If you don't want to wait, run the following command to download the already cla
 ```
 python3 x4_get_classified_data_and_embeddings_umap_clustered.py
 ```
+## 8.) Topic Modelling
+The following script is responsible for extracting the topics. The model and IP address of the vLLM Server can be adjusted inside the script.
+
+As a result, 6 folders with the scheme ``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_min_cluster_size_xxx_number_of_clusters_xxx`` will be created.
+
+The precomputed folders have the prefix ``precomputed`` so they won't be overwritten.
+
+```
+python3 06_topic_modelling.py
+```
