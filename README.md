@@ -55,4 +55,5 @@ python3 04_umap_reduction.py
 
 If you don't want to wait, run the following command to download the already classified and reduced data:
 ```
+python3 x3_get_classified_data_and_embeddings_umap.py
 ```
