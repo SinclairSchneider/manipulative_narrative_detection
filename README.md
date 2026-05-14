@@ -49,6 +49,9 @@ python3 x2_get_classified_data_and_embeddings.py
 ```
 ## 6.) Dimensionality reduction (UMAP)
 Apply dimensionality reduction to 5- and 2-dimensional spaces for further clustering and visualization.
+
+A new file will be generated called
+``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_classified_embeddings_umap.parquet``
 ```
 python3 04_umap_reduction.py
 ```
@@ -56,4 +59,17 @@ python3 04_umap_reduction.py
 If you don't want to wait, run the following command to download the already classified and reduced data:
 ```
 python3 x3_get_classified_data_and_embeddings_umap.py
+```
+## 7.) Clustering using HDBSCAN
+The clustering is done with min_samples=100 and a min cluster size of 100, 200, 400, 600, 800, 1000, but you can adjust the values to your data as well.
+
+A new file will be generated called
+``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_classified_embeddings_umap_cluster.parquet``
+```
+python3 05_hdbscan.py
+```
+
+If you don't want to wait, run the following command to download the already classified and reduced data:
+```
+python3 x4_get_classified_data_and_embeddings_umap_clustered.py
 ```
