@@ -136,3 +136,17 @@ Starting the evaluation can take some minutes since the file ``tweets_about_germ
 ```
 python3 02_generate_machine_human_evaluation.py
 ```
+
+### 2.3.) Plot a confusion matrix (human vs. LLM)
+As a final step, the evaluation results can be plotted using the following command.
+
+The result will be written in the file ``precomputed_agreement_matrix_clean.pdf``
+
+```
+python3 03_confusion_matrix_human_vs_llm.py
+```
+
+## 3.) Final remarks
+The reader might ask why all this is not done in one script. In fact, this would be possible, but since many of the steps shown can take a long time to compute, we opted not to run everything in a single script.
+
+This enables users to tune hyperparameters without recomputing the entire pipeline.
