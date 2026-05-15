@@ -111,7 +111,6 @@ python3 01_evaluation_min_cluster_size.py
 
 You will get a result similar to the following table, where the noise ratio is desired to be low, and the semantic distance between the points is desired to be high.
 
---- RESULTS ---
 |   min_cluster_size |   Num Clusters |   Noise Ratio (%) |   Avg Semantic Distance |
 |-------------------:|---------------:|------------------:|------------------------:|
 |                100 |            118 |             43.8  |                  0.3243 |
