@@ -120,3 +120,20 @@ You will get a result similar to the following table, where the noise ratio is d
 |                600 |             32 |             30.16 |                  0.3056 |
 |                800 |             29 |             31.17 |                  0.2964 |
 |               1000 |             24 |             32.19 |                  0.2874 |
+
+### 2.2.) Get a human evaluation
+To be the human evaluator, run the following script. 
+
+You will be presented with a statement and need to tell if it is a manipulative narrative or not, with the option ``borderline``to skip.
+
+Afterward, you will be presented with the model's rating alongside its reasoning, and you have to indicate whether it makes sense.
+
+At the end, a file called ``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified_user.json`` will be created.
+
+An author's version for testing is also available ``precomputed_tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified_user.json``
+
+Starting the evaluation can take some minutes since the file ``tweets_about_german_politicians_jan_feb_2025_reddit_and_telegram_BY_classified.json``is very big.
+
+```
+python3 02_generate_machine_human_evaluation.py
+```
